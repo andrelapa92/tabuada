@@ -1,0 +1,13 @@
+#div-nomes {
+    width: fit-content;
+}
+
+#footer {
+    background-color: black;
+    opacity: 0.7;
+}
+
+#footertext {
+    color: white;
+    opacity: 1;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="buscar-nomes.css">
+    <title>Buscar Nomes</title>
+</head>
+
+<body>
+
+    <div class="container-fluid ml-0 mr-0 pl-0 pr-0">
+        <nav class="navbar navbar-expand-lg bg-light rounded-bottom">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Tabuada</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="mt-5 container text-center">
+
+        <div class="mb-3">
+            <p>Insira um nome da lista a seguir e veja o que acontece:</p>
+            <input id="inputtext" type="text" onkeyup="destacaTexto()" placeholder="Nome">
+        </div>
+        <div id="div-nomes" class="mt-4 mx-auto">
+            <h1>Lista de nomes</h1>
+            <ol id="lista-nomes">
+                <li>João</li>
+                <li>Claudio</li>
+                <li>Marcio</li>
+            </ol>
+        </div>
+
+    </div>
+
+    <footer id="footer" class="fixed-bottom d-flex justify-content-center pt-2  rounded-top">
+        <p id="footertext">Desenvolvido por André Lapa</p>
+    </footer>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="public/buscar-nome.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
+
+</html>
