@@ -1,15 +1,20 @@
 let linhas = document.querySelectorAll("li");
-console.log(linhas);
 
 function destacaTexto() {
-    let inputTexto = document.getElementById("inputtext").value;
-    for (let i = 0; i <= linhas.length; i++) {
-        console.log(linhas[i].innerHTML.includes(inputTexto));
-        console.log(inputTexto);
-        /*
-        if (linhas[i].innerHTML.includes(inputTexto) == true) {
-            console.log(linhas[i].innerHTML);
+    try {
+        let inputTexto = document.getElementById("inputtext").value;
+        for (let i = 0; i <= linhas.length; i++) {
+            if (inputTexto != "") {
+                if (linhas[i].innerHTML.toLowerCase().includes(inputTexto) == true) {
+                    linhas[i].classList.add("strong");
+                } else {
+                    linhas[i].classList.remove("strong");
+                }
+            } else {
+                linhas[i].classList.remove("strong");
+            }
         }
-        */
+    } catch (error) {
+        console.log(error);
     }
 }
